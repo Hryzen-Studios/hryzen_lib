@@ -1,6 +1,6 @@
 if IsDuplicityVersion() then
-    local config = require 'config'
-    local bridge = require('bridge.framework.' .. config.Framework .. '.server')
+    local frameworkName = require 'utils/detect'
+    local bridge = require('bridge.framework.' .. frameworkName .. '.server')
 
     return bridge
 else

@@ -1,5 +1,5 @@
 return {
     Debug = false,
 
-    Framework = 'qbx', -- qbx, qbcore, esx
+    Framework = 'auto', -- auto, qbx, qbcore, esx — 'auto' detects via GetResourceState
 }
